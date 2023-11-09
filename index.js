@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use("/api",urlRoutes)
 
-app.listen(process.env.port, async(req,res) => {
+app.listen(8800, async(req,res) => {
     try {
         await connection
         console.log("Database connected!")
@@ -20,5 +20,5 @@ app.listen(process.env.port, async(req,res) => {
         console.log(erroo)
         console.log("Database not connected!")
     }
-    console.log(`Server is running on port ${process.env.port}`);
+    console.log(`Server is running on port 8800`);
 });
