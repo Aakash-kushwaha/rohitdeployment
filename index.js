@@ -14,7 +14,7 @@ app.get("/",(req,res)=>{
 }
 app.use("/api",urlRoutes)
 
-app.listen(8800, async(req,res) => {
+app.listen(3000, async(req,res) => {
     try {
         await connection
         console.log("Database connected!")
@@ -22,5 +22,5 @@ app.listen(8800, async(req,res) => {
         console.log(erroo)
         console.log("Database not connected!")
     }
-    console.log(`Server is running on port 8800`);
+    console.log(`Server is running on port 3000`);
 });
