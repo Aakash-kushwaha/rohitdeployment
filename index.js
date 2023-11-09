@@ -9,7 +9,9 @@ app.use(cors())
 
 app.use(bodyParser.json());
 
-
+app.get("/",(req,res)=>{
+    res.status(200).json({message:"welcome to dashboard"})
+}
 app.use("/api",urlRoutes)
 
 app.listen(8800, async(req,res) => {
