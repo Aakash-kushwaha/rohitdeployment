@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get("/",(req,res)=>{
     res.status(200).json({message:"welcome to dashboard"})
-}
+})
 app.use("/api",urlRoutes)
 
 app.listen(3000, async(req,res) => {
